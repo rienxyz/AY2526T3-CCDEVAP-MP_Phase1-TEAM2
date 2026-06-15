@@ -37,13 +37,17 @@ html, body {
 }
 
 .sidebar {
-  background: #11ff00;
+  background: #026838;
   border-right: 1px solid #525252;
   overflow: auto;
   padding: 1rem;
 }
 
-.main-map {
+.container {
+  position: relative
+}
+
+.interface {
   grid-column: span 2;
   height: 100%;
   display: flex;
@@ -87,4 +91,30 @@ html, body {
   flex: 1;
   padding: 1rem;
   overflow: auto;
+  position: absolute;
+}
+
+#mapContainer {
+  position: relative;
+  width: 100%;
+}
+
+#campusMap {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  position: absolute; 
+  background-color: red;
+
+  transition-duration: 0.2s;
+}
+
+.marker:hover {
+  transform: scale(1.5);
 }
