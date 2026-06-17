@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="buildings-style.css">
+		<meta charset="UTF-8">
+		<title>
+			Building Page
+		</title>
+    </head>
+
+    <body class="bg-light d-flex align-items-center min-vh-100">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-5 rounded-4">
+                        <h1 class="text-primary fw-bold mb-3 notice">Select a building:</h1>
+                         <select name="buildings" id="buildings">
+                            <option value="LS">St. La Salle Hall</option>
+                            <option value="G">John Gokongwei Sr. Hall</option>
+                            <option value="HS">Henry Sy Sr. Hall</option>
+                            <option value="Y">Don Enrique T. Yuchencho Hall</option>
+                            <option value="M">St. Miguel Febres Cordero Hall</option>
+                            <option value="V">Urbano J. Velasco Hall</option>
+                            <option value="J">St. Joseph Hall</option>
+                            <option value="A">Br. Andrew Gonzalez Building</option>
+                            <option value="ER">Enrique M. Razon Sports Center</option>
+                        </select>
+
+                        <button class="btn btn-primary btn-lg mt-3" id="confi">Confirm</button>
+
+                        <div class = "text-center mt-4" id="infodisp">
+                            <img src="" 
+                            class="img-fluid rounded border border-success p-1"
+                            style="max-height: 350px; width: auto;"
+                            alt=""
+                            id="bPhoto">
+                            <p class="text-secondary mt-2 text-center" id="text">Placeholder text for building info</p>
+                            <button class="btn btn-primary btn-lg mt-3" id="clea">Clear</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="buildings-script.js"></script>
+
+    </body>
+
+</html>
