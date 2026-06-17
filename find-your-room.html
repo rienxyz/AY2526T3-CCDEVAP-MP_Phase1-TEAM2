@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Room</title>
+  <link rel="stylesheet" href="findyourroom.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="page-title">Find Your Room</h1>
+
+    <div class="from-select-row">
+      <label for="from-select">Where are you now?</label>
+      <select id="from-select">
+        <option value="">— Select your current location —</option>
+        <optgroup label="Gates">
+          <option value="Gate 1 (South)">Gate 1 (South)</option>
+          <option value="Gate 2 (North)">Gate 2 (North)</option>
+          <option value="Gate 3 (Velasco)">Gate 3 (Velasco)</option>
+          <option value="Gate 4A (Gokongwei)">Gate 4A (Gokongwei)</option>
+          <option value="Gate 5A (Andrew)">Gate 5A (Andrew)</option>
+          <option value="Gate 6 (Razon)">Gate 6 (Razon)</option>
+          <option value="Gate 7 (STRC)">Gate 7 (STRC)</option>
+          <option value="Gate 8 (Agno)">Gate 8 (Agno)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Enter room code (e.g. LS305) or building name" />
+      <button id="search-btn">
+        Search
+      </button>
+    </div>
+
+    <div id="results-area"></div>
+  </div>
+
+  <script src="findyourroom.js"></script>
+</body>
+</html>
