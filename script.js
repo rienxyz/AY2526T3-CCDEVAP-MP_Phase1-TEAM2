@@ -72,3 +72,4 @@ buildings.forEach((name, index) => {
 });
 
 renderBuilding();
+
