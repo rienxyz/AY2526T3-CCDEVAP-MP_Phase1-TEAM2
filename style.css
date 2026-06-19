@@ -105,6 +105,16 @@ html, body {
   display: block;
 }
 
+.building {
+  position: absolute;
+  border: 2px solid black;
+}
+
+.building:hover {
+  opacity: 80%;
+  background-color: #00b05e;
+}
+
 .marker {
   width: 20px;
   height: 20px;

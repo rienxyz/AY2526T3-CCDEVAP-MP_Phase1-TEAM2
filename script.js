@@ -71,4 +71,9 @@ buildings.forEach((name, index) => {
   buildingNav.appendChild(button);
 });
 
+for (let i = 1; i <= 14; i++) {
+  const marker = document.getElementById(`marker${i}`).style.backgroundColor = "red";;
+}
+
 renderBuilding();
+
